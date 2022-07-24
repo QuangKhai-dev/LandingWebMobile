@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+  .stickyTop {
+    padding: 10px;
+
+    .topHeader {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .inputLeft {
+        display: flex;
+        padding: 0px 10px;
+        background: #f2f2f2;
+        height: 38px;
+        align-items: center;
+
+        input {
+          border: none;
+          background: transparent;
+          margin-left: 5px;
+        }
+      }
+
+      .iconShopping {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .headerWrap {
+      padding: 0 10px;
+
+      .headerWrapItem {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .homeCategory {
+    padding: 30px 10px 0 10px;
+
+    h5 {
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .swiper-grid {
+      padding-bottom: 30px;
+    }
+  }
+
+  .topSearch {
+    padding: 0px 10px;
+    padding-bottom: 100px;
+
+    .topSearchTitle {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .topSearchContent {
+      .topSearchInfo {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #fff;
+        font-weight: 400;
+
+        .topSearchPrice {
+          .price {
+            color: #ff2c00;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .currency {
+            font-size: 9px;
+            font-weight: 600;
+            color: #ff2c00;
+          }
+        }
+
+        .topSearchDescrip {
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .discount {
+    padding: 0px 10px;
+    padding-bottom: 50px;
+
+    .discountTitle {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .discountBanner {
+      margin-top: 15px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .newProduct {
+    padding: 0px 10px;
+    padding-bottom: 20px;
+
+    .newProductTitle {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .newProductContent {
+      .newProductInfo {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #fff;
+        font-weight: 400;
+
+        .newProductPrice {
+          .price {
+            color: #ff2c00;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .currency {
+            font-size: 9px;
+            font-weight: 600;
+            color: #ff2c00;
+          }
+        }
+
+        .newProductDescrip {
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .trend {
+    padding: 0px 10px;
+    padding-bottom: 100px;
+
+    .trendTitle {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .trendContent {
+      .trendInfo {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #fff;
+        font-weight: 400;
+
+        .trendPrice {
+          .price {
+            color: #ff2c00;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .currency {
+            font-size: 9px;
+            font-weight: 600;
+            color: #ff2c00;
+          }
+        }
+
+        .trendDescrip {
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .information {
+    padding: 0px 10px;
+    padding-bottom: 20px;
+
+    .informationTitle {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .informationContent {
+      .contentItem {
+        position: relative;
+
+        .bannerItem {
+          border-radius: 6px;
+          margin-bottom: 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .informationText {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-end;
+          border-radius: 6px;
+          background: rgba(0, 0, 0, .2196078431372549);
+          color: #fff;
+          font-size: 16px;
+          font-weight: 600;
+
+          .newsPostTitle {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+            min-height: unset !important;
+          }
+
+          .newsPostTime {
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: 300;
+            line-height: 17px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .interested {
+    padding: 0px 10px;
+    padding-bottom: 100px;
+
+    .interestedTitle {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .interestedContent {
+      margin-bottom: 15px;
+
+      .interestedImage {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .interestedInfo {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #fff;
+        font-weight: 400;
+
+        .interestedPrice {
+          .price {
+            color: #ff2c00;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .currency {
+            font-size: 9px;
+            font-weight: 600;
+            color: #ff2c00;
+          }
+        }
+
+        .interestedDescrip {
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .dropdownItem {
+
+      .card-header {
+        border-bottom: none;
+        background: #f2f2f2;
+
+        button {
+          padding-left: 0;
+          color: black;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+        }
+      }
+
+      .card-body {
+        background: #f2f2f2;
+        padding-top: 10px;
+
+        ul {
+          list-style: none;
+
+          li {
+            margin-top: 10px;
+            font-size: 14px;
+
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .followUs {
+      padding: 1.25rem;
+      background: #f2f2f2;
+      border-bottom: 1px solid #dee2e6;
+
+      .followUsTitle {
+        margin-bottom: 15px;
+      }
+    }
+
+    .dowloadApp {
+      padding: 10px 1.25rem;
+      background: #f2f2f2;
+      border-bottom: 1px solid #dee2e6;
+
+
+      .dowloadAppTitle {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .navigationFooter {
+    background: white;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    z-index: 5;
+
+    .navigationItem {
+      cursor: pointer;
+      width: 80px;
+      font-size: 14px;
+      align-items: center;
+    }
+  }
+}
