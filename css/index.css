@@ -50,6 +50,7 @@
   .showInfo {
     padding: 10px;
     background-color: rgb(255, 231, 212);
+    padding-bottom: 30px;
   }
   .showInfo p {
     margin-bottom: 0;
@@ -66,7 +67,7 @@
     border-radius: 10px;
     color: white;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 10px;
     -webkit-animation: flash linear 1s infinite;
             animation: flash linear 1s infinite;
   }
@@ -183,6 +184,8 @@
   }
   .showWearing .showWearingContent {
     position: relative;
+  }
+  .showWearing .showWearingContent .showWearingImg {
     padding: 20px 30px;
   }
   .showWearing .showWearingContent .showWearingImg img {
@@ -201,9 +204,9 @@
   .showWearing .showWearingContent .layout {
     position: absolute;
     background: rgb(255, 231, 212);
-    width: 100%;
-    bottom: 15;
+    bottom: 0px;
     left: 0;
+    right: 0;
     height: 40%;
     z-index: -1;
   }
