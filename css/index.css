@@ -348,6 +348,26 @@ body {
   align-items: center;
   width: 85%;
 }
+.formInfo form .messageError {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: red;
+  display: none;
+  justify-content: center;
+  color: white;
+}
+.formInfo form .messageSuccess {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: green;
+  display: none;
+  justify-content: center;
+  color: white;
+}
 .formInfo form .checkboxGroup {
   width: 100%;
 }

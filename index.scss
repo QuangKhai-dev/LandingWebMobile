@@ -428,6 +428,27 @@ body {
     align-items: center;
     width: 85%;
 
+    .messageError {
+      width: 100%;
+      height: 50px;
+      align-items: center;
+      background: red;
+      display: none;
+      justify-content: center;
+      color: white;
+    }
+
+    .messageSuccess {
+      width: 100%;
+      height: 50px;
+      align-items: center;
+      background: green;
+      display: none;
+
+      justify-content: center;
+      color: white;
+    }
+
     .checkboxGroup {
       width: 100%;
 

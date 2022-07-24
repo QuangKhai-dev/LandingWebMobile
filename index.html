@@ -1580,40 +1580,57 @@
       </div>
     </div> -->
     <div class="formInfo">
-      <form action="">
-        <input type="text" id="nameUser" required placeholder="Họ và tên" />
+      <form name="submit-to-google-sheet">
+        <div class="messageSuccess"></div>
+        <div class="messageError"></div>
         <input
           type="text"
-          id="phoneNumber"
+          id="hoTen"
+          name="hoTen"
+          required
+          placeholder="Họ và tên"
+        />
+        <input
+          type="text"
+          id="soDienThoai"
+          name="soDienThoai"
+          min="9"
+          max="11"
           required
           placeholder="Số điện thoại"
         />
-        <input type="text" id="address" required placeholder="Địa chỉ" />
+        <input
+          type="text"
+          id="diaChi"
+          name="diaChi"
+          required
+          placeholder="Địa chỉ"
+        />
         <div class="checkboxGroup">
           <ul>
             <li>
-              <input type="checkbox" />
+              <input type="checkbox" name="mauSac" value="den" />
               <span>Đen</span>
             </li>
             <li>
-              <input type="checkbox" />
+              <input type="checkbox" name="mauSac" value="trang" />
               <span>Trắng</span>
             </li>
             <li>
-              <input type="checkbox" />
+              <input type="checkbox" name="mauSac" value="kem" />
               <span>Kem</span>
             </li>
           </ul>
         </div>
 
         <textarea
-          name=""
-          id=""
+          name="ghiChu"
+          id="ghiChu"
           cols="30"
           rows="10"
           placeholder="Để lại tin nhắn cho chúng tôi"
         ></textarea>
-        <button>Mua ngay</button>
+        <button type="submit">Mua ngay</button>
       </form>
     </div>
     <footer>
@@ -1993,6 +2010,33 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+    </script>
+
+    <!-- Catch value and send to gg sheet  -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwKIpb3vA5Yr2bxkyNzGMCzFxxkXRavkz72AWj2yy5kzs5Yx_5faUpUd-ahudFrUb9VQA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(
+            (response) => (
+              (document.querySelector(".messageSuccess").style.display =
+                "flex"),
+              (document.querySelector(".messageSuccess").innerHTML =
+                "Gửi thông tin thành công")
+            )
+          )
+          .catch(
+            (error) => (
+              (document.querySelector(".messageError").style.display = "flex"),
+              (document.querySelector(".messageError").innerHTML =
+                "Gửi thông tin thất bại")
+            )
+          );
       });
     </script>
   </body>
