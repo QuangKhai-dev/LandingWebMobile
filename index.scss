@@ -10,6 +10,9 @@
 @media screen and (max-width: 576px) {
   .stickyTop {
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .topHeader {
       padding: 0 10px;
@@ -137,8 +140,8 @@
   }
 
   .newProduct {
-    padding: 0px 10px;
-    padding-bottom: 20px;
+    padding: 15px 10px;
+    padding-bottom: 50px;
 
     .newProductTitle {
       margin-bottom: 20px;
@@ -173,6 +176,7 @@
             text-decoration: none;
             color: #000;
             font-size: 16px;
+            display: block;
           }
         }
       }
@@ -311,6 +315,13 @@
 
     .interestedContent {
       margin-bottom: 15px;
+      width: 100%;
+      margin: 0 auto;
+
+      .col-6 {
+        padding: 10px;
+        margin-bottom: 10px;
+      }
 
       .interestedImage {
         img {
@@ -365,6 +376,10 @@
           justify-content: space-between;
           width: 100%;
           align-items: center;
+
+          &:focus {
+            text-decoration: none;
+          }
         }
       }
 

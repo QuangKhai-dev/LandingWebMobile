@@ -7,6 +7,9 @@
 @media screen and (max-width: 576px) {
   .stickyTop {
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .stickyTop .topHeader {
     padding: 0 10px;
@@ -104,8 +107,8 @@
     width: 100%;
   }
   .newProduct {
-    padding: 0px 10px;
-    padding-bottom: 20px;
+    padding: 15px 10px;
+    padding-bottom: 50px;
   }
   .newProduct .newProductTitle {
     margin-bottom: 20px;
@@ -133,6 +136,7 @@
     text-decoration: none;
     color: #000;
     font-size: 16px;
+    display: block;
   }
   .newProduct .newProductContent .swiper-slide img {
     width: 100%;
@@ -237,6 +241,12 @@
   }
   .interested .interestedContent {
     margin-bottom: 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .interested .interestedContent .col-6 {
+    padding: 10px;
+    margin-bottom: 10px;
   }
   .interested .interestedContent .interestedImage img {
     width: 100%;
@@ -275,6 +285,9 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+  }
+  footer .dropdownItem .card-header button:focus {
+    text-decoration: none;
   }
   footer .dropdownItem .card-body {
     background: #f2f2f2;
