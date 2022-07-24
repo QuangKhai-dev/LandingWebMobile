@@ -47,6 +47,166 @@
     text-decoration: none;
     color: black;
   }
+  .showInfo {
+    padding: 10px;
+    background-color: rgb(255, 231, 212);
+  }
+  .showInfo p {
+    margin-bottom: 0;
+  }
+  .showInfo .showInfoTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .showInfo .showInfoTop .warning {
+    background-color: rgb(243, 51, 58);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+    -webkit-animation: flash linear 1s infinite;
+            animation: flash linear 1s infinite;
+  }
+  .showInfo .showInfoTop .liveEye {
+    width: 20px;
+  }
+  .showInfo .showInfoTop .whoWatched {
+    margin-left: 5px;
+  }
+  .showInfo .showInfoMiddle {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+  }
+  .showInfo .showInfoMiddle .btnRed {
+    background-color: rgb(190, 4, 11);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 17px;
+    color: white;
+    padding: 5px 15px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .showInfo .showInfoMiddle .btnLineRed {
+    border-radius: 10px;
+    border: 2px solid rgb(204, 34, 25);
+    position: absolute;
+    padding: 5px;
+    left: 50%;
+    width: 75%;
+    top: 80%;
+    background: white;
+    transform: translateX(-50%);
+  }
+  .showInfo .showInfoMiddle .btnLineRed button {
+    border: none;
+    background-color: transparent;
+    border: 2px solid rgb(204, 34, 25);
+    border-radius: 10px;
+    color: rgb(204, 34, 25);
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .policy {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .policy .card {
+    margin: 0 10px;
+    position: relative;
+    border: 2px solid rgb(204, 34, 25);
+    width: 30%;
+  }
+  .policy .card .cardIcon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 226, 199);
+    border-radius: 50%;
+    top: -25px;
+  }
+  .policy .card .card-body {
+    padding: 20px 10px 5px 10px;
+    text-align: center;
+  }
+  .policy .card .card-body h5 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .policy .card .card-body p {
+    font-size: 12px;
+  }
+  .productDetail {
+    padding-top: 15px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(255, 226, 199);
+  }
+  .productDetail .productDetailTitle h4 {
+    color: rgb(204, 34, 25);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .productDetail .productDetailContent {
+    padding: 10px 20px;
+  }
+  .productDetail .productDetailContent .productDetailInfo {
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 10px;
+  }
+  .productDetail .productDetailContent .productDetailInfo ul {
+    text-align: left;
+    list-style: none;
+  }
+  .productDetail .productDetailContent .productDetailInfo .productDetailTitle {
+    font-weight: 600;
+  }
+  .productDetail .productDetailContent .productDetailInfo .productDetailSize {
+    color: rgb(203, 1, 1);
+    font-weight: 600;
+  }
+  .showWearing .showWearingContent {
+    position: relative;
+    padding: 20px 30px;
+  }
+  .showWearing .showWearingContent .showWearingImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .showWearing .showWearingContent button {
+    margin: 15px 0;
+    padding: 5px 55px;
+    border: none;
+    background: rgb(255, 122, 127);
+    color: white;
+    border-radius: 46px;
+    text-align: center;
+  }
+  .showWearing .showWearingContent .layout {
+    position: absolute;
+    background: rgb(255, 231, 212);
+    width: 100%;
+    bottom: 15;
+    left: 0;
+    height: 40%;
+    z-index: -1;
+  }
   .homeCategory {
     padding: 30px 10px 0 10px;
   }
@@ -141,6 +301,69 @@
   .newProduct .newProductContent .swiper-slide img {
     width: 100%;
     height: 100%;
+  }
+  .formInfo {
+    background-image: url("./../images/backgroundForm.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    height: 500px;
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: repeat;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .formInfo form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  .formInfo form .checkboxGroup {
+    width: 100%;
+  }
+  .formInfo form .checkboxGroup ul {
+    list-style: none;
+    display: flex;
+  }
+  .formInfo form .checkboxGroup ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .formInfo form .checkboxGroup ul li input {
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+  .formInfo form input {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .formInfo form textarea {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 100px;
+  }
+  .formInfo form button {
+    background: rgb(204, 34, 25);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 50px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 46px;
+    width: 100%;
   }
   .trend {
     padding: 0px 10px;
@@ -341,5 +564,27 @@
   .navigationFooter .navigationItem span {
     margin-top: 5px;
     font-size: 11px;
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=index.css.map */
